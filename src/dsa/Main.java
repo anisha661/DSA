@@ -2,6 +2,7 @@ package dsa;
 
 import dsa.DataStructure.Array.DuplicatesSortedArray;
 import dsa.DataStructure.Array.MaxConsecutiveOnes;
+import dsa.DataStructure.Stack.ValidParenthesis;
 
 public class Main {
 
@@ -15,5 +16,9 @@ public class Main {
         DuplicatesSortedArray duplicatesSortedArray = new DuplicatesSortedArray();
         int[] nums2 = new int[]{1,2,2,3,4,4,4,5,6,6};
         System.out.println(duplicatesSortedArray.removeDuplicates(nums2));
+
+        //Valid Parenthesis
+        ValidParenthesis validParenthesis = new ValidParenthesis();
+        System.out.println(validParenthesis.isValid("[{(}]"));
     }
 }
