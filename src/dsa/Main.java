@@ -3,6 +3,8 @@ package dsa;
 import dsa.DataStructure.Array.DuplicatesSortedArray;
 import dsa.DataStructure.Array.MaxConsecutiveOnes;
 import dsa.DataStructure.LinkedList.AddTwoNumbers;
+import dsa.DataStructure.LinkedList.MergeTwoSortedList;
+import dsa.DataStructure.LinkedList.Node;
 import dsa.DataStructure.Stack.ValidParenthesis;
 
 import java.util.LinkedList;
@@ -24,5 +26,19 @@ public class Main {
         ValidParenthesis validParenthesis = new ValidParenthesis();
         System.out.println(validParenthesis.isValid("[{(}]"));
 
+        Node head = new Node(2);
+        head.next = new Node(4);
+        head.next.next = new Node(6);
+
+        Node head2 = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(5);
+        head.next.next.next = new Node(7);
+
+        AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
+        MergeTwoSortedList mergeTwoSortedList = new MergeTwoSortedList();
+        System.out.println(mergeTwoSortedList.mergeTwoLinkedList(head,head2));
+
+        System.out.println(addTwoNumbers.addTwoNumbers(head,head2));
     }
 }
