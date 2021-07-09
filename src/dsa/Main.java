@@ -2,6 +2,7 @@ package dsa;
 
 import dsa.DataStructure.Array.DuplicatesSortedArray;
 import dsa.DataStructure.Array.MaxConsecutiveOnes;
+import dsa.DataStructure.Array.ValidMountainArray;
 import dsa.DataStructure.LinkedList.AddTwoNumbers;
 import dsa.DataStructure.LinkedList.MergeTwoSortedList;
 import dsa.DataStructure.LinkedList.Node;
@@ -14,18 +15,19 @@ public class Main {
     public static void main(String[] args) {
 
         MaxConsecutiveOnes m1 = new MaxConsecutiveOnes();
-        int[] nums = new int[]{1,1,1,0,0,0,1,1,0,0,1,1,1,1,0,0};
+        int[] nums = new int[]{1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0};
         System.out.println(m1.findMaxConsecutiveOnes(nums));
 
         //remove duplicates from sorted array
         DuplicatesSortedArray duplicatesSortedArray = new DuplicatesSortedArray();
-        int[] nums2 = new int[]{1,2,2,3,4,4,4,5,6,6};
+        int[] nums2 = new int[]{1, 2, 2, 3, 4, 4, 4, 5, 6, 6};
         System.out.println(duplicatesSortedArray.removeDuplicates(nums2));
 
         //Valid Parenthesis
         ValidParenthesis validParenthesis = new ValidParenthesis();
         System.out.println(validParenthesis.isValid("[{(}]"));
 
+        //Linked List
         Node head = new Node(2);
         head.next = new Node(4);
         head.next.next = new Node(6);
@@ -37,8 +39,13 @@ public class Main {
 
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
         MergeTwoSortedList mergeTwoSortedList = new MergeTwoSortedList();
-        System.out.println(mergeTwoSortedList.mergeTwoLinkedList(head,head2));
+        System.out.println(mergeTwoSortedList.mergeTwoLinkedList(head, head2));
+        System.out.println(addTwoNumbers.addTwoNumbers(head, head2));
 
-        System.out.println(addTwoNumbers.addTwoNumbers(head,head2));
+        //Valid Mountain array
+        ValidMountainArray validMountainArray = new ValidMountainArray();
+        int[] arr = new int[]{1, 2, 2, 3, 4, 2,0};
+        System.out.println("Is valid?" + validMountainArray.isValidMountainArray(arr));
     }
+
 }
