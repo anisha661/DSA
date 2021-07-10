@@ -8,6 +8,7 @@ import dsa.DataStructure.LinkedList.MergeTwoSortedList;
 import dsa.DataStructure.LinkedList.Node;
 import dsa.DataStructure.LinkedList.ReverseLinkedList;
 import dsa.DataStructure.Stack.ValidParenthesis;
+import dsa.DataStructure.String.ReverseVowels;
 
 import java.util.LinkedList;
 
@@ -51,6 +52,10 @@ public class Main {
         //Reverse a linked list
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
         System.out.println("reversed linked list : " + reverseLinkedList.reverseLinkedList(head));
+
+        //Reverse Vowels of a String
+        ReverseVowels reverseVowels = new ReverseVowels();
+        System.out.println(reverseVowels.reverseVowelsOfString("Simultaneous"));
     }
 
 }
