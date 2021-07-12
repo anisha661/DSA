@@ -9,6 +9,7 @@ import dsa.DataStructure.LinkedList.Node;
 import dsa.DataStructure.LinkedList.ReverseLinkedList;
 import dsa.DataStructure.Stack.ValidParenthesis;
 import dsa.DataStructure.String.ReverseVowels;
+import dsa.DataStructure.String.ValidPalindrome;
 
 import java.util.LinkedList;
 
@@ -55,7 +56,11 @@ public class Main {
 
         //Reverse Vowels of a String
         ReverseVowels reverseVowels = new ReverseVowels();
-        System.out.println(reverseVowels.reverseVowelsOfString("Simultaneous"));
+        System.out.println("Reverse a string : "+reverseVowels.reverseVowelsOfString("Simultaneous"));
+
+        //Valid Palindrome
+        ValidPalindrome validPalindrome = new ValidPalindrome();
+        System.out.println("Is palindrome"+validPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
     }
 
 }
