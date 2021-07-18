@@ -2,6 +2,7 @@ package dsa;
 
 import dsa.DataStructure.Array.DuplicatesSortedArray;
 import dsa.DataStructure.Array.MaxConsecutiveOnes;
+import dsa.DataStructure.Array.NAndItsDouble;
 import dsa.DataStructure.Array.ValidMountainArray;
 import dsa.DataStructure.LinkedList.AddTwoNumbers;
 import dsa.DataStructure.LinkedList.MergeTwoSortedList;
@@ -61,6 +62,11 @@ public class Main {
         //Valid Palindrome
         ValidPalindrome validPalindrome = new ValidPalindrome();
         System.out.println("Is palindrome"+validPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
+
+
+        NAndItsDouble nAndItsDouble = new NAndItsDouble();
+        int[] arr2 = new int[]{10,2,0,2};
+        System.out.println("Double exists : " +  nAndItsDouble.checkIfExist(arr2));
     }
 
 }
