@@ -9,6 +9,7 @@ import dsa.DataStructure.LinkedList.MergeTwoSortedList;
 import dsa.DataStructure.LinkedList.Node;
 import dsa.DataStructure.LinkedList.ReverseLinkedList;
 import dsa.DataStructure.Stack.Stack;
+import dsa.DataStructure.Stack.StackLL;
 import dsa.DataStructure.Stack.ValidParenthesis;
 import dsa.DataStructure.String.ReverseVowels;
 import dsa.DataStructure.String.ValidPalindrome;
@@ -77,6 +78,14 @@ public class Main {
         stack.push(4);
         stack.pop();
         System.out.println("Top of Stack is : "+ stack.topOfStack());
+
+
+        StackLL stackLL = new StackLL();
+        stackLL.push(4);
+        stackLL.push(10);
+        stackLL.push(55);
+        stackLL.pop();
+        System.out.println("Stack Implemetation using Linked List : " + stackLL.topOfStack());
     }
 
 }
