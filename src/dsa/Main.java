@@ -8,6 +8,7 @@ import dsa.DataStructure.LinkedList.AddTwoNumbers;
 import dsa.DataStructure.LinkedList.MergeTwoSortedList;
 import dsa.DataStructure.LinkedList.Node;
 import dsa.DataStructure.LinkedList.ReverseLinkedList;
+import dsa.DataStructure.Stack.Stack;
 import dsa.DataStructure.Stack.ValidParenthesis;
 import dsa.DataStructure.String.ReverseVowels;
 import dsa.DataStructure.String.ValidPalindrome;
@@ -67,6 +68,15 @@ public class Main {
         NAndItsDouble nAndItsDouble = new NAndItsDouble();
         int[] arr2 = new int[]{10,2,0,2};
         System.out.println("Double exists : " +  nAndItsDouble.checkIfExist(arr2));
+
+
+        //Stack Implementation
+        Stack stack = new Stack(10);
+        stack.push(1);
+        stack.push(5);
+        stack.push(4);
+        stack.pop();
+        System.out.println("Top of Stack is : "+ stack.topOfStack());
     }
 
 }
