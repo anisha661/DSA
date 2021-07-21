@@ -8,6 +8,7 @@ import dsa.DataStructure.LinkedList.AddTwoNumbers;
 import dsa.DataStructure.LinkedList.MergeTwoSortedList;
 import dsa.DataStructure.LinkedList.Node;
 import dsa.DataStructure.LinkedList.ReverseLinkedList;
+import dsa.DataStructure.Stack.InfixToPostFix;
 import dsa.DataStructure.Stack.Stack;
 import dsa.DataStructure.Stack.StackLL;
 import dsa.DataStructure.Stack.ValidParenthesis;
@@ -86,6 +87,11 @@ public class Main {
         stackLL.push(55);
         stackLL.pop();
         System.out.println("Stack Implemetation using Linked List : " + stackLL.topOfStack());
+
+
+        //infix to Postfix
+        InfixToPostFix infixToPostFix = new InfixToPostFix();
+        System.out.println("Infix to postfix: "+ infixToPostFix.postfixConversion("(a+b)*(c-d/e)"));
     }
 
 }
