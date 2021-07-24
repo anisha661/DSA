@@ -8,6 +8,7 @@ import dsa.DataStructure.LinkedList.AddTwoNumbers;
 import dsa.DataStructure.LinkedList.MergeTwoSortedList;
 import dsa.DataStructure.LinkedList.Node;
 import dsa.DataStructure.LinkedList.ReverseLinkedList;
+import dsa.DataStructure.Queue.Queue;
 import dsa.DataStructure.Stack.InfixToPostFix;
 import dsa.DataStructure.Stack.Stack;
 import dsa.DataStructure.Stack.StackLL;
@@ -92,6 +93,14 @@ public class Main {
         //infix to Postfix
         InfixToPostFix infixToPostFix = new InfixToPostFix();
         System.out.println("Infix to postfix: "+ infixToPostFix.postfixConversion("(a+b)*(c-d/e)"));
+
+        //Queue
+        Queue queue = new Queue(10);
+        queue.enqueue(2);
+        queue.enqueue(5);
+        queue.enqueue(7);
+        queue.dequeue();
+        System.out.println("Queue" + queue.front());
     }
 
 }
