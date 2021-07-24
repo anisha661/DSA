@@ -18,10 +18,15 @@ public class Queue {
     }
 
     public boolean isEmpty(){
-        return front == -1 && rear == -1;
+        return (front == -1 && rear == -1);
+    }
+    public boolean isFull(){
+        return (rear + 1) % length == front;
     }
     public void enqueue(int x){
-        if(isEmpty()){
+        if(isFull()){
+            throw new RuntimeException("Queue is full!");
+        }else if(isEmpty()){
             front = rear = 0;
         }else{
             rear = (rear+1)%length;
@@ -29,7 +34,7 @@ public class Queue {
         A[rear] = x;
     }
 
-    public int dequeue(){
+    public void dequeue(){
         if(isEmpty()){
             throw new RuntimeException("Queue is Empty");
         }else if(front == rear){
@@ -37,7 +42,6 @@ public class Queue {
         }else{
             front = (front + 1) % length;
         }
-        return front;
     }
 
     public int front(){
