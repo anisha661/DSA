@@ -14,6 +14,7 @@ import dsa.DataStructure.Stack.Stack;
 import dsa.DataStructure.Stack.StackLL;
 import dsa.DataStructure.Stack.ValidParenthesis;
 import dsa.DataStructure.String.ReverseVowels;
+import dsa.DataStructure.String.ShuffleString;
 import dsa.DataStructure.String.ValidPalindrome;
 
 import java.util.LinkedList;
@@ -101,6 +102,11 @@ public class Main {
         queue.enqueue(7);
         queue.dequeue();
         System.out.println("Queue" + queue.front());
+
+
+        //Shuffle String
+        ShuffleString ss = new ShuffleString();
+        System.out.println("Shuffled String is : " + ss.shuffleString("niasha", new int[]{1,2,0,3,4,5}));
     }
 
 }
