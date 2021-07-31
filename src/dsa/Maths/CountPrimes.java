@@ -5,9 +5,9 @@ package dsa.Maths;
 public class CountPrimes {
 
     public int noOfPrimes(int n){
-        Boolean[] primes = new Boolean[n];
+        boolean[] primes = new boolean[n];
 
-        for(int i =2; i*i<primes.length;i++){
+        for(int i = 2; i*i<primes.length;i++){
             if(!primes[i]){
                 for(int j =i;j*i<primes.length;j++){
                     primes[i*j] = true;

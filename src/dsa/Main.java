@@ -16,6 +16,7 @@ import dsa.DataStructure.Stack.ValidParenthesis;
 import dsa.DataStructure.String.ReverseVowels;
 import dsa.DataStructure.String.ShuffleString;
 import dsa.DataStructure.String.ValidPalindrome;
+import dsa.Maths.CountPrimes;
 import dsa.Maths.HappyNumber;
 
 import java.util.LinkedList;
@@ -113,6 +114,9 @@ public class Main {
         //Happy Number
         HappyNumber happyNumber = new HappyNumber();
         System.out.println(happyNumber.isHappy(12));
+
+        CountPrimes countPrimes = new CountPrimes();
+        System.out.println("primes"+ countPrimes.noOfPrimes(10));
     }
 
 }
