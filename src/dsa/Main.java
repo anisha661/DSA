@@ -16,6 +16,7 @@ import dsa.DataStructure.Stack.ValidParenthesis;
 import dsa.DataStructure.String.ReverseVowels;
 import dsa.DataStructure.String.ShuffleString;
 import dsa.DataStructure.String.ValidPalindrome;
+import dsa.Maths.HappyNumber;
 
 import java.util.LinkedList;
 
@@ -107,6 +108,11 @@ public class Main {
         //Shuffle String
         ShuffleString ss = new ShuffleString();
         System.out.println("Shuffled String is : " + ss.shuffleString("niasha", new int[]{1,2,0,3,4,5}));
+
+
+        //Happy Number
+        HappyNumber happyNumber = new HappyNumber();
+        System.out.println(happyNumber.isHappy(12));
     }
 
 }
