@@ -136,6 +136,13 @@ public class Main {
 
         KthSmallest kthSmallest = new KthSmallest();
         System.out.println(kthSmallest.findKthSmallestFromBST(root, 2));
+
+        System.out.println("Before inversion  left subtree" + root.left.data);
+        System.out.println("Before inversion  right subtree" +root.right.data);
+        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+        invertBinaryTree.invertBinaryTree(root);
+        System.out.println("After inversion  left subtree" + root.left.data);
+        System.out.println("After inversion  right subtree" + root.right.data);
     }
 
 }
