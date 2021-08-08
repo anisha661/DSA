@@ -16,9 +16,7 @@ import dsa.DataStructure.Stack.ValidParenthesis;
 import dsa.DataStructure.String.ReverseVowels;
 import dsa.DataStructure.String.ShuffleString;
 import dsa.DataStructure.String.ValidPalindrome;
-import dsa.DataStructure.Tree.BreadthFirstTraversal;
-import dsa.DataStructure.Tree.DepthFirstTraversal;
-import dsa.DataStructure.Tree.NodeT;
+import dsa.DataStructure.Tree.*;
 import dsa.Maths.CountPrimes;
 import dsa.Maths.HappyNumber;
 
@@ -126,10 +124,18 @@ public class Main {
         root.right = new NodeT(15);
         root.left.left = new NodeT(8);
         root.left.right = new NodeT(11);
-        root.right.right = new NodeT(18);
+        root.right.right = new NodeT(17);
         DepthFirstTraversal depthFirstTraversal = new DepthFirstTraversal();
+        depthFirstTraversal.inOrder(root);
         BreadthFirstTraversal breadthFirstTraversal = new BreadthFirstTraversal();
         breadthFirstTraversal.breadthFirstTraversal(root);
+
+        CheckForBST checkForBST = new CheckForBST();
+        System.out.println(checkForBST.isBST(root));
+
+
+        KthSmallest kthSmallest = new KthSmallest();
+        System.out.println(kthSmallest.findKthSmallestFromBST(root, 2));
     }
 
 }
