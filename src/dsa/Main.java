@@ -119,30 +119,41 @@ public class Main {
 //        CountPrimes countPrimes = new CountPrimes();
 //        System.out.println("primes"+ countPrimes.noOfPrimes(10));
 
-        NodeT root = new NodeT(12);
-        root.left = new NodeT(10);
-        root.right = new NodeT(15);
-        root.left.left = new NodeT(8);
-        root.left.right = new NodeT(11);
-        root.right.right = new NodeT(17);
+//        NodeT root = new NodeT(12);
+//        root.left = new NodeT(10);
+//        root.right = new NodeT(15);
+//        root.left.left = new NodeT(8);
+//        root.left.right = new NodeT(11);
+//        root.right.right = new NodeT(17);
         DepthFirstTraversal depthFirstTraversal = new DepthFirstTraversal();
-        depthFirstTraversal.inOrder(root);
-        BreadthFirstTraversal breadthFirstTraversal = new BreadthFirstTraversal();
-        breadthFirstTraversal.breadthFirstTraversal(root);
+//        depthFirstTraversal.inOrder(root);
+//        BreadthFirstTraversal breadthFirstTraversal = new BreadthFirstTraversal();
+//        breadthFirstTraversal.breadthFirstTraversal(root);
+//
+//        CheckForBST checkForBST = new CheckForBST();
+//        System.out.println(checkForBST.isBST(root));
+//
+//
+//        KthSmallest kthSmallest = new KthSmallest();
+//        System.out.println(kthSmallest.findKthSmallestFromBST(root, 2));
+//
+//        System.out.println("Before inversion  left subtree" + root.left.data);
+//        System.out.println("Before inversion  right subtree" +root.right.data);
+//        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+//        invertBinaryTree.invertBinaryTree(root);
+//        System.out.println("After inversion  left subtree" + root.left.data);
+//        System.out.println("After inversion  right subtree" + root.right.data);
 
-        CheckForBST checkForBST = new CheckForBST();
-        System.out.println(checkForBST.isBST(root));
+//        BinarySearchTree binarySearchTree = new BinarySearchTree();
+//        binarySearchTree.insert(5);
+//        binarySearchTree.insert(10);
+//        binarySearchTree.insert(2);
+//        binarySearchTree.insert(3);
+//        binarySearchTree.insert(50);
+//        binarySearchTree.insert(7);
+//        System.out.println(binarySearchTree);
+//        depthFirstTraversal.inOrder(BinarySearchTree.root);
 
-
-        KthSmallest kthSmallest = new KthSmallest();
-        System.out.println(kthSmallest.findKthSmallestFromBST(root, 2));
-
-        System.out.println("Before inversion  left subtree" + root.left.data);
-        System.out.println("Before inversion  right subtree" +root.right.data);
-        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
-        invertBinaryTree.invertBinaryTree(root);
-        System.out.println("After inversion  left subtree" + root.left.data);
-        System.out.println("After inversion  right subtree" + root.right.data);
     }
 
 }
