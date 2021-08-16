@@ -15,6 +15,7 @@ import dsa.DataStructure.Stack.StackLL;
 import dsa.DataStructure.Stack.ValidParenthesis;
 import dsa.DataStructure.String.ReverseVowels;
 import dsa.DataStructure.String.ShuffleString;
+import dsa.DataStructure.String.ValidAnagram;
 import dsa.DataStructure.String.ValidPalindrome;
 import dsa.DataStructure.Tree.*;
 import dsa.Maths.CountPrimes;
@@ -154,6 +155,8 @@ public class Main {
 //        System.out.println(binarySearchTree);
 //        depthFirstTraversal.inOrder(BinarySearchTree.root);
 
+        ValidAnagram validAnagram = new ValidAnagram();
+        System.out.println(validAnagram.isAnagram("anisha","ishana"));
     }
 
 }
