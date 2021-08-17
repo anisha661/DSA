@@ -1,5 +1,8 @@
 package dsa.DataStructure.Array;
 
+/**
+ * Given a sorted integer array nums and an integer target return the index position where target can be inserted if it doesn't already exist in the array
+ * */
 public class InsertPosition {
 
     public int searchInsertPosition(int[] nums, int target){
