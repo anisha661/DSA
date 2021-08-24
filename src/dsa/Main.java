@@ -13,10 +13,7 @@ import dsa.DataStructure.Stack.InfixToPostFix;
 import dsa.DataStructure.Stack.Stack;
 import dsa.DataStructure.Stack.StackLL;
 import dsa.DataStructure.Stack.ValidParenthesis;
-import dsa.DataStructure.String.ReverseVowels;
-import dsa.DataStructure.String.ShuffleString;
-import dsa.DataStructure.String.ValidAnagram;
-import dsa.DataStructure.String.ValidPalindrome;
+import dsa.DataStructure.String.*;
 import dsa.DataStructure.Tree.*;
 import dsa.Maths.CountPrimes;
 import dsa.Maths.HappyNumber;
@@ -157,6 +154,11 @@ public class Main {
 
         ValidAnagram validAnagram = new ValidAnagram();
         System.out.println(validAnagram.isAnagram("anisha","ishana"));
+
+        String s1 = new String("3");
+        String s2 = new String("114");
+        MultiplyString multiplyString = new MultiplyString();
+        System.out.println(multiplyString.multiplyString(s1,s2));
     }
 
 }
